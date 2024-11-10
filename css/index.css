@@ -399,36 +399,14 @@ h1 {
     background-color: beige;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
     margin: 2% 8%;
-    padding: 1.5%;
-    padding-top: 0%;
+    padding: 0 1.5% 1.5% 0;
     text-align: center;
 }
 
-#nombre{
+.input_form{
     border: 3px ridge #ffb214;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    width: 28vw;
-    margin: 4% auto;
-}
-
-#apellido{
-    border: 3px ridge #ffb214;
-    font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    width: 28vw;
-    margin: 4% auto;
-}
-
-#correo{
-    border: 3px ridge #ffb214;
-    font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    width: 28vw;
-    margin: 4% auto;
-}
-
-#telefono{
-    border: 3px ridge #ffb214;
-    font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    width: 28vw;
+    width: 25vw;
     margin: 4% auto;
 }
 
