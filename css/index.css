@@ -406,6 +406,7 @@ h1 {
 .input_form{
     border: 3px ridge #ffb214;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
+    font-size: 1.8vw;
     width: 25vw;
     margin: 4% auto;
 }
@@ -413,6 +414,7 @@ h1 {
 #mensaje{
     border: 3px ridge #ffb214;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
+    font-size: 1.8vw;
     width: 50%;
 }
 
@@ -434,6 +436,13 @@ h1 {
     border: 3px ridge gray;
     background-color: black;
     width: 10vw;
+}
+
+@media (width < 650px){
+    .input_form{
+        display: block;
+        width: 48%;
+    }
 }
 
 /* Footer ----------------------------------------------------------*/
