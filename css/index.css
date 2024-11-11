@@ -50,7 +50,7 @@ header{
 .menu_item a {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: clamp(0.55em, 1.5vw, 2em);
     text-align: center;
     color: black;
     width: 100%;
@@ -82,7 +82,7 @@ h1 {
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 6px;
-    font-size: 3vw;
+    font-size: clamp(1.5em, 3vw, 3.5em);
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
     text-align: center;
     padding: 0.5%;
@@ -96,7 +96,7 @@ h1 {
 .parrafo_uno{  
     color: white;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 2vw;
+    font-size: clamp(1em, 2vw, 3em);
     border-radius: 7px;
     font-style: oblique;
     font-weight: 300;
@@ -106,7 +106,7 @@ h1 {
 
 .titulo_tres {
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 3vw;
+    font-size: clamp(1.5em, 3vw, 3.5em);
     border-radius: 6px;
     text-align: center;
     padding: 0.5%;
@@ -122,7 +122,7 @@ h1 {
 }
 .parrafo_dos{
     color: white;
-    font-size: 2.4vw;
+    font-size: clamp(1em, 2vw, 3em);
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
     border-radius: 7px;
     font-style: oblique;
@@ -148,7 +148,7 @@ h1 {
 
 .titulo_mapa{
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 2vw;
+    font-size: clamp(1em, 2vw, 3em);
     border-radius: 15px;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
@@ -195,7 +195,7 @@ h1 {
 
 .titulo_cuatro {
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 3vw;
+    font-size: clamp(1.5em, 3vw, 3.5em);
     border-radius: 6px;
     text-align: center;
     padding: 0.5%;
@@ -219,32 +219,26 @@ h1 {
 }
 
 .grid_item_1{
-    font-size: 2vw;
     grid-area: item_1;
 }
 
 .grid_item_2{
-    font-size: 2vw;
     grid-area: item_2;
 }
 
 .grid_item_3{
-    font-size: 1.5vw;
     grid-area: item_3;
 }
 
 .grid_item_4{
-    font-size: 1.5vw;
     grid-area: item_4;
 }
 
 .grid_item_5{
-    font-size: 1.5vw;
     grid-area: item_5;
 }
 
 .grid_item_6{
-    font-size: 1.5vw;
     grid-area: item_6;
 }
 
@@ -255,6 +249,7 @@ h1 {
     margin: 2% 0;
     padding: 2%;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
+    font-size: clamp(1em, 2vw, 3em);
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -292,7 +287,7 @@ h1 {
 
 .titulo_cinco {
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 3vw;
+    font-size: clamp(1.5em, 3vw, 3.5em);
     border-radius: 6px;
     text-align: center;
     padding: 0.5%;
@@ -373,7 +368,7 @@ h1 {
 
 .titulo_seis {
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 3vw;
+    font-size: clamp(1.5em, 3vw, 3.5em);
     border-radius: 6px;
     text-align: center;
     padding: 0.5%;
@@ -387,14 +382,15 @@ h1 {
     background-color: beige;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
     margin: 2% 8%;
-    padding: 0 1.5% 1.5% 0;
+    padding: 1.5%;
+    padding-left: 0;
     text-align: center;
 }
 
 .input_form{
     border: 3px ridge #ffb214;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 1.8vw;
+    font-size: clamp(0.8em, 1.8vw, 2.5em);
     width: 25vw;
     margin: 4% auto;
 }
@@ -402,7 +398,7 @@ h1 {
 #mensaje{
     border: 3px ridge #ffb214;
     font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 1.8vw;
+    font-size: clamp(0.8em, 1.8vw, 2.5em);
     width: 50%;
 }
 
@@ -410,8 +406,9 @@ h1 {
     display: inline-table;
     font-family: Nunito, Roboto, Verdana, Tahoma, sans-serif;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: clamp(0.8em, 1.8vw, 2.5em);
     margin: 0;
+    margin-left: 1%;
     padding-bottom: 0%;
     width: 10%;
 }
@@ -431,6 +428,9 @@ h1 {
         display: block;
         width: 48%;
     }
+    .formulario label{
+        width: 50%;
+    }
 }
 
 /* Footer ----------------------------------------------------------*/
@@ -445,7 +445,7 @@ footer {
 
 .tit_footer{
     font-family: Capriola, Roboto, Tahoma, Verdana, sans-serif;
-    font-size: 1.5vw;
+    font-size: clamp(0.8em, 1.5vw, 2em);
     padding-left: 1%;
     margin: 1% 0% 0%;
     color: white;
@@ -467,14 +467,14 @@ footer {
 
 .redes_item a{
     text-decoration: none;
-    font-size: 3vw;
+    font-size: clamp(1em, 2.5vw, 3em);
     color: #ffb214;
-    width: 100px;
 }
 
 .firma{
     font-family: Honk, Roboto, Verdana, Tahoma, sans-serif;
-    font-size: 1.5vw;
+    font-size: clamp(0.7em, 1.5vw, 2em);
     float: right;
-    width: 33%;
+    width: 40%;
+    padding-left: 5%;
 }
