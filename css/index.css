@@ -295,10 +295,10 @@ h1 {
     background-color: rgba(0, 1, 83, 0.85);
 }
 
-.contenedor{
+.contenedorItems{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgba(57, 126, 255, 0.6);
     border: 5px outset rgb(0, 0, 0);
     border-radius: 10px;
@@ -306,63 +306,74 @@ h1 {
     gap: 10px;
 }
 
-.item{
+.card{
     border: 3px solid black;
     background-color: blue;
     border-radius: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 30vw;
+    width: 25%;
+    padding: 2%;
+    margin: 2%;
     text-align: center;
-    padding: 1%;
 }
 
-.item_imagen{
+.itemImagen{
     background-color: black;
     border: 2px solid black;
-    margin: 2% auto;
+    margin: auto;
+    width: 100%;
+    height: 240px;
 }
 
-.item_titulo{
-    background-color: rgba(2, 2, 2, 0.8);
-    margin: 2% 1%;
+.nombre{
+    background-color: rgba(2, 2, 2, 0.75);
     padding: 1%;
     border-radius: 5px;
+    margin: auto;
     color: aliceblue;
     font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.4vw;
+    font-size: clamp(1em, 1.5vw, 3em);
+    text-align: center;
 }
 
-.item_precio{
+.precio{
     display: inline-block;
     color: white;
     font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1vw;
+    font-size: clamp(1em, 1.5vw, 3em);
     font-weight: 700;
-    width: 20%;
-    margin: 1% 1%;
+    margin: 2%;
 }
 
-.item_cant{
-    width: 4vw;
-    height: auto;
-    font-size: 1vw;
-}
-
-.item_cant_label{
-    color: white;
-    font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1vw;
-}
-
-.item_comprar{
+.boton{
     color: rgb(255, 255, 255);
     font-family: Nunito, Roboto, Verdana, Tahoma, sans-serif;
     font-size: 1vw;
     font-weight: 400;
-    border: 3px ridge rgb(0, 0, 0);
-    background-color: rgb(102, 102, 102);
+    border: 3px ridge gray;
+    background-color: black;
     width: 8vw;
+    margin: 1%;
 }
+
+.detalles{
+    display: none;
+}
+
+.detalles p{
+    color: black;
+    border: 2px dotted black;
+    border-radius: 5px;
+    margin: 2% 0;
+    padding: 2%;
+    font-family: Itim, Roboto, Verdana, Tahoma, sans-serif;
+    font-size: clamp(0.5em, 1.5vw, 3em);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*.boton:hover{
+    letter-spacing: 2px;
+}*/
 
 /* Formulario ---------------------------*/
 
@@ -413,7 +424,7 @@ h1 {
     width: 10%;
 }
 
-.boton{
+.botonForm{
     color: white;
     font-family: Nunito, Roboto, Verdana, Tahoma, sans-serif;
     font-size: 1vw;
